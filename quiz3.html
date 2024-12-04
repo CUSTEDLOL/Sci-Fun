@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#2196f3">
+<title>SCI-FUN</title>
+<!-- Font embedding link goes here -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+
+<!-- CSS link goes here -->
+<link rel="stylesheet" href="css/framework7.material.min.css">
+<link rel="stylesheet" href="css/framework7.material.colors.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/swipebox.min.css">
+<link rel="stylesheet" href="css/maxframes.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/button.css">
+<link rel="stylesheet" href="css/google-icons.css">
+<link rel="stylesheet" href="css/acc.css.css">
+<link rel="stylesheet" href="css/component.css">
+<link rel="stylesheet"  href="css/menu.css">
+<style>
+textarea, input {
+  padding:10px;
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+</style>
+
+<style>
+/* Propeller icons */
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* Propeller css for Floating Action Button*/
+.pmd-floating-action { bottom: 0; position: fixed;  margin:1em;  right: 0; }
+.pmd-floating-action-btn { display:block; position: relative; transition: all .2s ease-out;}
+.pmd-floating-action-btn:before { bottom: 10%; content: attr(data-title); opacity: 0; position: absolute; right: 100%; transition: all .2s ease-out .5s;  white-space: nowrap; background-color:#fff; padding:6px 12px; border-radius:2px; color:#333; font-size:12px; margin-right:5px; display:inline-block; box-shadow: 0px 2px 3px -2px rgba(0, 0, 0, 0.18), 0px 2px 2px -7px rgba(0, 0, 0, 0.15);}
+.pmd-floating-action-btn:last-child:before { font-size: 14px; bottom: 25%;}
+.pmd-floating-action-btn:active, .pmd-floating-action-btn:focus, .pmd-floating-action-btn:hover {box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);}
+.pmd-floating-action-btn:not(:last-child){ opacity: 0; -ms-transform: translateY(20px) scale(0.3); transform: translateY(20px) scale(0.3); margin-bottom:15px; margin-left:8px; position:absolute; bottom:0;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(1) { transition-delay: 50ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(2) { transition-delay: 100ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(3) { transition-delay: 150ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(4) { transition-delay: 200ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(5) { transition-delay: 250ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(6) { transition-delay: 300ms;}
+.pmd-floating-action:hover .pmd-floating-action-btn, .menu--floating--open .pmd-floating-action-btn { opacity: 1; -ms-transform: none; transform: none; position:relative; bottom:auto;}
+.pmd-floating-action:hover .pmd-floating-action-btn:before, .menu--floating--open .pmd-floating-action-btn:before { opacity: 1;}
+.pmd-floating-hidden{ display:none;}
+.pmd-floating-action-btn.btn:hover{ overflow:visible;}
+
+.pmd-floating-action-btn .ink{ width:50px; height:50px;}
+ul li{list-style:none;}
+
+.o1,
+.o2,
+.o3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.o1 {
+  color: #00F;
+}
+
+.o2 {
+  color: #F00;
+}
+
+.o3 {
+  color: #F0F;
+}
+</style>
+
+</head>
+<body class="theme-indigo gradient">
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+
+    
+
+    
+    
+    
+<div class="views pageview" >
+  <div class="view view-main">
+    <div class="pages">
+      <div data-page="index" class="page">
+	  <div class="navbar ">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="chemistry.html" data-panel="left" class="external"><i class="fa fa-arrow-left" style="margin-left:10px;color:#fff;"></i></a></div>
+        <div class="logo">
+		<p>CHEMISTRY</p>
+		
+		</div>
+       
+    </div>
+  </div>
+  		
+  <div class="page-content hide-bars-on-scroll" style="font-size:16px;">
+
+		<div class="prductlist home center"style="margin-top:70px;">
+		<h1 style="color:#fff;">QUIZ</h1></div>
+<p style="padding-left:20px;">
+1.	Elements which are named after scientists are</p>
+ <ul><li><input type="radio" name="choose1" class="chs1" onclick="Ans(false,1)"> curium </li>
+ <li><input type="radio" name="choose1" class="chs1" onclick="Ans(false,1)"> einsteinium</li>
+ <li><input type="radio" name="choose1" class="chs1" onclick="Ans(true,1)"> both a and b</li>
+ <li><input type="radio" name="choose1" class="chs1" onclick="Ans(false,1)"> aurum</li>
+ </ul>
+<p style="padding-left:20px;font-weight:bold;">Result: <input id="t1" type="hidden" value="0" ><span id="test1" style="font-weight:bold;" >&nbsp;</span>
+</p>
+<p style="padding-left:20px;">
+2. Cu is symbol of element</p>
+ <ul><li><input type="radio" name="choose2" class="chs2" onclick="Ans(true,2)"> copper</li>
+ <li><input type="radio" name="choose2" class="chs2" onclick="Ans(false,2)"> cobalt</li>
+ <li><input type="radio" name="choose2" class="chs2" onclick="Ans(false,2)"> both a and b</li>
+ <li><input type="radio" name="choose2" class="chs2" onclick="Ans(false,2)"> curium</li>
+ </ul>
+<p style="padding-left:20px;font-weight:bold;">Result: <input id="t2" type="hidden" value="0" ><span id="test2" style="font-weight:bold;" >&nbsp;</span>
+</p>
+<p style="padding-left:20px;">
+3.	Element which is filled in thermometer due to its temperature sensitivity is called</p>
+ <ul><li><input type="radio" name="choose3" class="chs3" onclick="Ans(true,3)"> mercury</li>
+ <li><input type="radio" name="choose3" class="chs3" onclick="Ans(false,3)"> copper</li>
+ <li><input type="radio" name="choose3" class="chs3" onclick="Ans(false,3)"> helium</li>
+ <li><input type="radio" name="choose3" class="chs3" onclick="Ans(false,3)"> oxygen</li>
+ </ul>
+<p style="padding-left:20px;font-weight:bold;">Result: <input id="t3" type="hidden" value="0" ><span id="test3" style="font-weight:bold;" >&nbsp;</span>
+</p>
+<p style="padding-left:20px;">
+4.	  A very light and inert gas is</p>
+ <ul><li><input type="radio" name="choose4" class="chs4" onclick="Ans(false,4)"> oxygen</li>
+ <li><input type="radio" name="choose4" class="chs4" onclick="Ans(false,4)"> hydrogen</li>
+ <li><input type="radio" name="choose4" class="chs4" onclick="Ans(false,4)"> helium</li>
+ <li><input type="radio" name="choose4" class="chs4" onclick="Ans(true,4)"> neon</li>
+ </ul>
+<p style="padding-left:20px;font-weight:bold;">Result: <input id="t4" type="hidden" value="0" ><span id="test4" style="font-weight:bold;" >&nbsp;</span>
+</p>
+<p style="padding-left:20px;">
+5.	A greenish yellow poisonous gas is</p>
+ <ul><li><input type="radio" name="choose5" class="chs5" onclick="Ans(true,5)"> chlorine</li>
+ <li><input type="radio" name="choose5" class="chs5" onclick="Ans(false,5)"> carbon dioxide</li>
+ <li><input type="radio" name="choose5" class="chs5" onclick="Ans(false,5)"> nitrogen</li>
+ <li><input type="radio" name="choose5" class="chs5" onclick="Ans(false,5)"> helium</li>
+ </ul>
+<p style="padding-left:20px;font-weight:bold;">Result: <input id="t5" type="hidden" value="0" ><span id="test5" style="font-weight:bold;" >&nbsp;</span>
+</p><!--<br/><br/><p style="padding-left:20px;">
+Answer Key:-<br/>
+<ul><li>Both a and b</li>
+<li>Copper</li>
+<li>Mercury</li>
+<li>Neon </li>
+<li>Chlorine</li>
+</ul>
+</p>--><p class="o3" style="padding-left:20px;"><br>
+    Total Score:<span id="scoreNum"> &nbsp;</span><br/><br/></p>
+      </div>
+	 
+    </div>
+  </div>
+</div>
+
+
+<!-- JS link goes here --> 
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script> 
+<script type="text/javascript" src="js/maxframes.js"></script> 
+ <script src="js/jquery.form.js"></script>
+<script>
+function Ans(TF,numbr) 
+  { 
+  var result=(TF===true)? {symbol:"CORRECT",add:1} : {symbol:"WRONG", add:0};
+    document.getElementById("test"+numbr).innerHTML = result.symbol; 
+	if(result.symbol=="CORRECT"){
+	$("#test"+numbr).css("color", "#69ef69");
+$(".chs"+numbr).attr('disabled', true);
+	}
+	else{
+	$("#test"+numbr).css("color", "#fb1010");
+	$(".chs"+numbr).attr('disabled', true);
+	}
+    document.getElementById("t"+numbr).value=result.add;
+    var totScore=Number(t1_Obj.value)+Number(t2_Obj.value)+Number(t3_Obj.value)+Number(t4_Obj.value)+Number(t5_Obj.value);
+    document.getElementById("scoreNum").innerHTML= " &nbsp;"+totScore;    
+  }
+ var t1_Obj= document.getElementById("t1");
+ var t2_Obj= document.getElementById("t2");
+ var t3_Obj= document.getElementById("t3");
+ var t4_Obj= document.getElementById("t4");
+  var t5_Obj= document.getElementById("t5");
+</script>
+
+</body>
+
+</html>

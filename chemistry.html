@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#2196f3">
+<title>SCI-FUN</title>
+<!-- Font embedding link goes here -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+
+<!-- CSS link goes here -->
+<link rel="stylesheet" href="css/framework7.material.min.css">
+<link rel="stylesheet" href="css/framework7.material.colors.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/swipebox.min.css">
+<link rel="stylesheet" href="css/maxframes.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/button.css">
+<link rel="stylesheet" href="css/google-icons.css">
+<link rel="stylesheet" href="css/acc.css.css">
+<link rel="stylesheet" href="css/component.css">
+<link rel="stylesheet"  href="css/menu.css">
+<style>
+textarea, input {
+  padding:10px;
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+</style>
+
+<style>
+/* Propeller icons */
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* Propeller css for Floating Action Button*/
+.pmd-floating-action { bottom: 0; position: fixed;  margin:1em;  right: 0; }
+.pmd-floating-action-btn { display:block; position: relative; transition: all .2s ease-out;}
+.pmd-floating-action-btn:before { bottom: 10%; content: attr(data-title); opacity: 0; position: absolute; right: 100%; transition: all .2s ease-out .5s;  white-space: nowrap; background-color:#fff; padding:6px 12px; border-radius:2px; color:#333; font-size:12px; margin-right:5px; display:inline-block; box-shadow: 0px 2px 3px -2px rgba(0, 0, 0, 0.18), 0px 2px 2px -7px rgba(0, 0, 0, 0.15);}
+.pmd-floating-action-btn:last-child:before { font-size: 14px; bottom: 25%;}
+.pmd-floating-action-btn:active, .pmd-floating-action-btn:focus, .pmd-floating-action-btn:hover {box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);}
+.pmd-floating-action-btn:not(:last-child){ opacity: 0; -ms-transform: translateY(20px) scale(0.3); transform: translateY(20px) scale(0.3); margin-bottom:15px; margin-left:8px; position:absolute; bottom:0;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(1) { transition-delay: 50ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(2) { transition-delay: 100ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(3) { transition-delay: 150ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(4) { transition-delay: 200ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(5) { transition-delay: 250ms;}
+.pmd-floating-action-btn:not(:last-child):nth-last-child(6) { transition-delay: 300ms;}
+.pmd-floating-action:hover .pmd-floating-action-btn, .menu--floating--open .pmd-floating-action-btn { opacity: 1; -ms-transform: none; transform: none; position:relative; bottom:auto;}
+.pmd-floating-action:hover .pmd-floating-action-btn:before, .menu--floating--open .pmd-floating-action-btn:before { opacity: 1;}
+.pmd-floating-hidden{ display:none;}
+.pmd-floating-action-btn.btn:hover{ overflow:visible;}
+
+.pmd-floating-action-btn .ink{ width:50px; height:50px;}
+</style>
+
+<script src="./imagemaps_files/ios-orientationchange-fix.min.js.download"></script>
+	<style>
+	img[usemap] {
+		border: none;
+		height: auto;
+		width: auto;
+	}
+	</style>
+</head>
+<body class="theme-indigo gradient">
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal sidebar">
+  <div class="view">
+    <div class=" ">
+      <div data-page="panel-left" class="sidemenu leftmenusmall ">
+        <div class="item-content userprofile">
+        <div class="item-media"><img src="img/logo.png" class="responsive-img" style="max-width:250px;"/></div>
+        </div>
+        <div class="page-content">
+            <div class="list-block accordion-list">
+              <ul class="menu">
+				 <li><a href="index.html" class="item-link close-panel item-content external"><div class="itemmeniinner"><i class="fa fa-home"></i><span>WELCOME</span></div></a></li>
+                <li><a href="biology.html" class="item-link close-panel item-content external"><div class="itemmeniinner"><i class="fa fa-user"></i><span>BIOLOGY</span></div></a></li>
+              
+				<li><a href="chemistry.html" class="item-link close-panel item-content external"><div class="itemmeniinner"><i class="fa fa-flask"></i><span>CHEMISTRY</span></div></a></li>
+				<li><a href="physics.html" class="item-link close-panel item-content external"><div class="itemmeniinner"><i class="fa fa-lightbulb-o"></i><span>PHYSICS</span></div></a></li>
+				
+				
+                  
+              </ul>
+           
+			 </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+    
+    
+<div class="views pageview" >
+  <div class="view view-main">
+    <div class="pages">
+      <div data-page="index" class="page">
+	  <div class="navbar ">
+    <div class="navbar-inner">
+       <div class="left sliding"><a href="#" data-panel="left" class="open-panel link icon-only"><i class="fa fa-bars"></i></a></div>
+        <div class="logo">
+		<p>SCI-FUN</p>
+		
+		</div>
+       
+    </div>
+  </div>
+  		
+  <div class="page-content hide-bars-on-scroll" >
+
+		<div class="prductlist home center"style="margin-top:70px;">
+		 <div class="alert success" id="asuccess" >
+		</div>
+		
+           <div>
+	<h1 align="center" style="color:#FFF;">CHEMISTRY</h1>
+<br>
+<br>
+	<div align="center"><img src="./imagemaps_files/periodic-table.jpg"  usemap="#powerpuffgirls" alt=""></div>
+	<map name="powerpuffgirls"><area shape="poly" coords="707,580,708,562,568,555,576,574" href="#"><area shape="poly" coords="433,550,434,532,294,525,302,544" href="#">
+	  <area shape="poly" coords="864,667,912,649,922,667,971,667,973,718,981,721,985,729,988,730,1010,730,1010,742,833,742,833,730,865,730,865,721,874,721,874,718,864,667,864,667" href="#" title="Cartoon Network" alt="Cartoon Network">
+	  <area shape="rect" coords="372,614,506,719" href="#">
+      <area shape="poly" coords="251,576" href="#">
+      <area shape="poly" coords="128,630,125,651" href="#">
+      <area shape="poly" coords="327,652,328,634,188,627,196,646" href="#">
+      <area shape="rect" coords="206,419,255,461" href="59.html">
+      <area shape="rect" coords="258,420,305,461" href="60.html">
+      <area shape="rect" coords="309,420,357,460" href="61.html">
+      <area shape="rect" coords="360,421,408,460" href="62.html">
+      <area shape="rect" coords="410,420,457,461" href="63.html">
+      <area shape="rect" coords="460,419,509,460" href="64.html">
+      <area shape="rect" coords="512,420,560,462" href="65.html">
+      <area shape="rect" coords="563,420,612,461" href="66.html">
+      <area shape="rect" coords="613,419,662,462" href="67.html">
+      <area shape="rect" coords="665,420,714,462" href="68.html">
+      <area shape="rect" coords="715,420,765,461" href="69.html">
+      <area shape="rect" coords="767,420,816,462" href="70.html">
+      <area shape="rect" coords="818,419,868,462" href="71.html">
+      <area shape="rect" coords="155,324,204,366" href="72.html">
+      <area shape="rect" coords="205,323,254,366" href="73.html">
+      <area shape="rect" coords="257,324,306,365" href="74.html">
+      <area shape="rect" coords="308,323,356,365" href="75.html">
+      <area shape="rect" coords="358,324,408,366" href="76.html">
+      <area shape="rect" coords="410,323,459,366" href="77.html">
+      <area shape="rect" coords="460,323,510,365" href="78.html">
+      <area shape="rect" coords="512,323,561,366" href="79.html">
+      <area shape="rect" coords="563,324,611,366" href="80.html">
+      <area shape="rect" coords="614,324,663,365" href="81.html">
+      <area shape="rect" coords="664,324,714,366" href="82.html">
+      <area shape="rect" coords="716,323,765,366" href="83.html">
+      <area shape="rect" coords="766,323,816,366" href="84.html">
+      <area shape="rect" coords="817,323,867,366" href="85.html">
+      <area shape="rect" coords="869,323,918,366" href="86.html">
+      <area shape="rect" coords="2,367,51,410" href="87.html">
+      <area shape="rect" coords="53,367,102,410" href="88.html">
+      <area shape="rect" coords="103,463,152,506" href="89.html">
+      <area shape="rect" coords="154,463,204,506" href="90.html">
+      <area shape="rect" coords="206,464,255,506" href="91.html">
+      <area shape="rect" coords="257,464,306,506" href="92.html">
+      <area shape="rect" coords="307,464,357,506" href="93.html">
+      <area shape="rect" coords="358,463,408,506" href="94.html">
+      <area shape="rect" coords="410,464,458,505" href="95.html">
+      <area shape="rect" coords="460,464,509,506" href="96.html">
+      <area shape="rect" coords="512,464,560,506" href="97.html">
+      <area shape="rect" coords="562,463,612,505" href="98.html">
+      <area shape="rect" coords="614,464,663,506" href="99.html">
+      <area shape="rect" coords="665,464,713,506" href="100.html">
+      <area shape="rect" coords="716,463,765,506" href="101.html">
+      <area shape="rect" coords="766,463,816,506" href="102.html">
+      <area shape="rect" coords="818,464,868,506" href="103.html">
+      <area shape="rect" coords="154,367,203,410" href="104.html">
+      <area shape="rect" coords="205,368,255,410" href="105.html">
+      <area shape="rect" coords="257,368,306,410" href="106.html">
+      <area shape="rect" coords="308,368,357,410" href="107.html">
+      <area shape="rect" coords="360,368,407,408" href="108.html">
+      <area shape="rect" coords="410,368,459,408" href="109.html">
+      <area shape="rect" coords="462,368,509,409" href="110.html">
+      <area shape="rect" coords="512,367,561,409" href="111.html">
+      <area shape="rect" coords="562,367,612,410" href="112.html">
+      <area shape="rect" coords="613,368,662,410" href="113.html">
+      <area shape="rect" coords="664,368,714,410" href="114.html">
+      <area shape="rect" coords="716,368,765,410" href="115.html">
+      <area shape="rect" coords="766,367,816,410" href="116.html">
+      <area shape="rect" coords="818,368,866,411" href="117.html">
+      <area shape="rect" coords="869,367,918,410" href="118.html">
+      <area shape="rect" coords="1,102,52,147" href="1.html">
+      <area shape="rect" coords="868,103,918,146" href="2.html">
+      <area shape="rect" coords="1,147,52,190" href="3.html">
+      <area shape="rect" coords="53,148,102,190" href="4.html">
+      <area shape="rect" coords="613,147,663,190" href="6.html">
+      <area shape="rect" coords="664,147,714,190" href="6.html">
+      <area shape="rect" coords="715,147,765,190" href="7.html">
+      <area shape="rect" coords="766,147,816,190" href="8.html">
+      <area shape="rect" coords="817,147,867,190" href="9.html">
+      <area shape="rect" coords="868,147,918,190" href="10.html">
+      <area shape="rect" coords="1,192,51,234" href="11.html">
+      <area shape="rect" coords="52,191,102,234" href="12.html">
+      <area shape="rect" coords="613,191,663,234" href="13.html">
+      <area shape="rect" coords="664,192,713,234" href="14.html">
+      <area shape="rect" coords="715,191,765,234" href="15.html">
+      <area shape="rect" coords="766,191,816,234" href="16.html">
+      <area shape="rect" coords="817,191,867,234" href="17.html">
+      <area shape="rect" coords="868,191,918,234" href="18.html">
+      <area shape="rect" coords="1,235,51,278" href="19.html">
+      <area shape="rect" coords="52,235,102,278" href="20.html">
+      <area shape="rect" coords="104,235,153,278" href="21.html">
+      <area shape="rect" coords="154,235,204,278" href="22.html">
+      <area shape="rect" coords="205,236,255,277" href="23.html">
+      <area shape="rect" coords="256,235,306,277" href="24.html">
+      <area shape="rect" coords="307,235,357,278" href="25.html">
+      <area shape="rect" coords="358,235,408,278" href="26.html">
+      <area shape="rect" coords="409,235,459,278" href="27.html">
+      <area shape="rect" coords="460,235,509,278" href="28.html">
+      <area shape="rect" coords="511,235,561,278" href="29.html">
+      <area shape="rect" coords="562,235,612,278" href="30.html">
+      <area shape="rect" coords="614,235,663,277" href="31.html">
+      <area shape="rect" coords="665,235,714,277" href="32.html">
+      <area shape="rect" coords="715,235,765,278" href="33.html">
+      <area shape="rect" coords="766,235,816,278" href="34.html">
+      <area shape="rect" coords="817,235,867,278" href="35.html">
+      <area shape="rect" coords="868,235,918,278" href="36.html">
+      <area shape="rect" coords="1,280,50,322" href="37.html">
+      <area shape="rect" coords="52,280,101,322" href="38.html">
+      <area shape="rect" coords="103,279,153,322" href="39.html">
+      <area shape="rect" coords="155,280,203,321" href="40.html">
+      <area shape="rect" coords="205,279,254,322" href="41.html">
+      <area shape="rect" coords="256,279,306,321" href="42.html">
+      <area shape="rect" coords="307,279,357,322" href="43.html">
+      <area shape="rect" coords="358,279,408,322" href="44.html">
+      <area shape="rect" coords="409,279,458,322" href="45.html">
+      <area shape="rect" coords="460,279,510,322" href="46.html">
+      <area shape="rect" coords="511,279,561,322" href="47.html">
+      <area shape="rect" coords="563,279,612,322" href="48.html">
+      <area shape="rect" coords="613,280,662,322" href="49.html">
+      <area shape="rect" coords="664,279,714,322" href="50.html">
+      <area shape="rect" coords="715,279,765,322" href="51.html">
+      <area shape="rect" coords="766,279,815,322" href="52.html">
+      <area shape="rect" coords="818,279,867,322" href="53.html">
+      <area shape="rect" coords="868,279,917,322" href="54.html">
+      <area shape="rect" coords="2,323,51,366" href="55.html">
+      <area shape="rect" coords="52,323,101,366" href="56.html">
+      <area shape="rect" coords="102,419,154,461" href="57.html">
+      <area shape="rect" coords="155,420,205,461" href="58.html">
+  </map>
+</div>
+<br>
+<div><a href="quiz3.html" class="external"><img src="img/quiz.png" width="125" height="119"></a></div>
+<div><a style="color:#FFF; font-weight:bold;" href="#">Clickhere</a></div>
+<script src="./imagemaps_files/jquery.min.js.download"></script>
+<script src="./imagemaps_files/jquery.rwdImageMaps.min.js.download"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+
+});
+</script>
+ 
+		</div>
+  </div>
+      </div>
+	  
+    </div>
+  </div>
+</div>
+<!-- JS link goes here --> 
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script> 
+<script type="text/javascript" src="js/maxframes.js"></script> 
+ <script src="js/jquery.form.js"></script>
+
+
+</body>
+
+</html>
