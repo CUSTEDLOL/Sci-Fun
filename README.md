@@ -1,5 +1,5 @@
 <h1>Sci-Fun 🌌</h1>
-[Main Page](https://custedlol.github.io/Sci-Fun/biology.html)
+[Main Page]((https://custedlol.github.io/Sci-Fun/biology.html))
 
 This repository contains a science-focused web application built with HTML, CSS, and JavaScript. The application is designed to make learning and exploring scientific concepts interactive and user-friendly.
 
